@@ -123,6 +123,23 @@ public class q1{
         s.display();
         s.peek();
         System.out.println("Is stack empty? "+s.isEmpty());
+
+        String str;
+        stack<String> s1=new stack<String>(size,null);
+        for(int i=0;i<size;i++){
+            obj.nextLine();
+            System.out.println("Enter elements in stack");
+            str=obj.nextLine();
+            //obj.nextLine();
+            s1.push(str);
+        }
+        s1.display();
+        System.out.println("Stack Size: "+s1.getSize());
+        s1.pop();
+        System.out.println("Stack Size: "+s1.getSize());
+        s1.display();
+        s1.peek();
+        System.out.println("Is stack empty? "+s1.isEmpty());
                 
 
     }
