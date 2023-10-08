@@ -1,6 +1,9 @@
 import java.util.Scanner;
-import java.util.EmptyStackException;
-
+class StackEmptyException extends Exception{
+    public StackEmptyException(String message){
+        super(message);
+    }
+}
 class node <T> {
     public T data;
     public node <T> next;
@@ -76,7 +79,7 @@ class stack <T>{
             System.out.println("Peek element: "+ top);
         }
         else{
-            throw new StackEmptyException ("Stack is empty!");
+            throw new StackEmptyException("Stack is empty!");
         }
     }
 
